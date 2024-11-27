@@ -11,7 +11,8 @@ function updateSunPosition() {
     window.scrollX / (document.body.scrollWidth - window.innerWidth);
 
   // Start at π/2 (top of ellipse) and go counterclockwise
-  const angle = scrollProgress * 2 * Math.PI - Math.PI / 2;
+  const days = 6;
+  const angle = scrollProgress * (days * 2) * Math.PI - Math.PI / 2;
 
   // Parametric equations for ellipse
   const x = a * Math.cos(angle);
