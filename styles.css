@@ -1,0 +1,41 @@
+/* ========== Styles ========== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --sky-day: linear-gradient(#56c4ef 0%, #a3ddf4 50%);
+  --ocean-day: #33a4ba;
+}
+
+body {
+  position: relative;
+  overflow-x: scroll;
+  width: 400vw;
+  height: 100vh;
+}
+
+#sky {
+  position: absolute;
+  background: var(--sky-day);
+  width: 100%;
+  height: 100vh;
+}
+
+.sun-container {
+  position: fixed;
+  margin: 60px;
+  width: calc(100vw - 120px);
+  height: calc(100vh - 120px);
+}
+
+#sun {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
